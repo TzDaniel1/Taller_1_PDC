@@ -1,20 +1,36 @@
-# Taller 1 
-Grupo 7 Pecados de la Programacion
+# **Taller 1**
 
+**Grupo 7 Pecados de la Programacion**
+=============
 ### Programación de Computadores - UNAL
 
 1. Realice el <a href="https://pythonspot.com/python-tests-quizes/">quiz</a> *Python Beginner Quiz* (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
-
+![]
+> Resultados quiz
 2. Realice un programa que lea tres números reales y determine cuál es el mayor.
-
+  > Extencion .py
 3. Realice un programa que lea un número enteros y determine si es par o impar.
+> Extencion .ipynb
 
+###Diagrama de Flujo
+
+```mermaid
+flowchart TD;
+    
+```
 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
+> Extencion .py
+ 
+###Diagrama de Flujo
 
+```mermaid
+flowchart TD;
+    
+```
 5. Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
-
+> Extencion .ipynb
 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
-
+> Extencion .py
 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
   + El promedio
   + La mediana 
@@ -23,16 +39,24 @@ Grupo 7 Pecados de la Programacion
   + Ordenar los números de forma descendente
   + La potencia del mayor número elevado al menor número
   + La raíz cúbica del menor número
-
+> Extencion .ipynb
 8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del <a href="https://es.wikipedia.org/wiki/Espectro_electromagn%C3%A9tico">espectro electromagnético se encuentra</a>.
+> Extencion .py
 
+
+###Diagrama de Flujo
+
+```mermaid
+flowchart TD;
+    
+```
 9. Escriba un programa que reciba el nombre en minúsculas de un país de **America** y retorne la ciudad capital, si el país no pertenece al continente debe arrojar *país no identificado*.
-
+> Extencion .ipynb
 10. Escriba un programa que dada una distancia calcule:
 + El tiempo que le tomaría a la luz recorrer la distancia.
 + El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
 + El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
 + El tiempo que le tomaría a Bolt recorrer la distancia.
-
+> Extencion .py
 
 
