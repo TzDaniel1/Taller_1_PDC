@@ -1,12 +1,16 @@
-# **Taller 1**
-
-**Grupo 7 Pecados de la Programacion**
-=============
+# **Taller 1** 
+# **Grupo 7 Pecados de la Programacion**
 ### Programación de Computadores - UNAL
+
+[![Logo-Blood-Small.png](https://i.postimg.cc/2ytcCvyY/Logo-Blood-Small.png)](https://postimg.cc/QKpkbFcY)
+=============
 
 1. Realice el <a href="https://pythonspot.com/python-tests-quizes/">quiz</a> *Python Beginner Quiz* (20 preguntas) y adjunte pantallazo con el resultado (mínimo 90% bien).
 ![]
 > Resultados quiz
+
+[![Python-Quiz1.jpg](https://i.postimg.cc/jdzPxPLh/Python-Quiz1.jpg)](https://postimg.cc/XpYpxZKZ)
+
 2. Realice un programa que lea tres números reales y determine cuál es el mayor.
   > Extencion .py
 ```
@@ -39,7 +43,7 @@ elif segundo_num==tercer_num:
 ```
 3. Realice un programa que lea un número enteros y determine si es par o impar.
 > Extencion .ipynb
-> Queriamos añdir Notas de Junyper Directamente pero el proceso es confuso
+`Queriamos añdir Notas de Junyper Directamente pero el proceso no nos funciono`
 
 ```
 #Par or Impar
@@ -113,6 +117,17 @@ else:
 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
 > Extencion .py
 
+```
+#programa que solicite al usuario una letra y determine si es una vocal o una consonante.
+letra_eval: int
+letra_eval = (input("Ingrese letra :"))
+n=letra_eval
+if ord(n)== 97 or ord(n)==101 or ord(n)==105 or ord(n)==111 or ord(n)==117:
+    print("Es vocal")
+else:
+    print("Es consonante")
+```
+
 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
   + El promedio
   + La mediana 
@@ -122,6 +137,43 @@ else:
   + La potencia del mayor número elevado al menor número
   + La raíz cúbica del menor número
 > Extencion .ipynb
+
+```
+#frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
+hz: int
+hz = int(input("Ingrese la frecuencia de la onda en hz (hertz): "))
+if hz > 30e+18:
+  print("La onda pertenece a la región de rayos gamma")
+elif hz > 30e+15:
+  print("La onda pertenece a la región de rayos X")
+elif hz > 1.5e+15:
+  print("La onda es del ultravioleta extremo")
+elif hz > 7.89e+14:
+  print("La onda es del ultravioleta cercano")
+elif hz > 384e+12:
+  print("La onda es del espectro visible")
+elif hz > 120e+12:
+  print("La onda es del infrarrojo cercano")
+elif hz > 6e+12:
+  print("La onda es del infrarrojo medio")
+elif hz > 300e+9:
+  print("La onda es del infrarrojo lejano")
+elif hz > 3e+8:
+  print("La onda es una microonda")
+elif hz > 300e+6:
+  print("La onda es de Ultra Alta Frecuencia")
+elif hz > 30e+6:
+  print("La onda es de muy alta frecuencia y de radio")
+elif hz > 1.7e+6:
+  print("La onda es corta y de radio")
+elif hz > 650e+3:
+  print("La onda es media y de radio")
+elif hz > 30e+3:
+    print("La onda es larga y de radio")
+else:
+    print("La onda es de muy baja frecuencia")
+```
+
 8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del <a href="https://es.wikipedia.org/wiki/Espectro_electromagn%C3%A9tico">espectro electromagnético se encuentra</a>.
 > Extencion .py
 
