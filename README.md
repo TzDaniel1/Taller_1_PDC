@@ -139,6 +139,64 @@ else:
 > Extencion .ipynb
 
 ```
+# Ingresar 5 números
+a = float(input("Ingrese el número a: "))
+b = float(input("Ingrese el número b: "))
+c = float(input("Ingrese el número c: "))
+d = float(input("Ingrese el número d: "))
+e = float(input("Ingrese el número e: "))
+
+f=(a+b+c+d+e)/5
+m1=a
+m2=b
+m3=c
+m4=d
+m5=e
+
+if m1 > m2:
+    m1, m2 = m2, m1
+    if m1 > m3:
+        m1, m3 = m3, m1
+    if m1 > m4:
+        m1, m4 = m4, m1
+    if m1 > m5:
+        m1, m5 = m5, m1
+
+if m2 > m3:
+    m2, m3 = m3, m2
+    if m2 > m4:
+        m2, m4 = m4, m3
+    if m2 > m5:
+        m2, m5 = m5, m2
+
+if m3 > m4:
+    m3, m4 = m4, m3
+    if m3 > m5:
+        m3, m5 = m5, m3
+
+if m4 > m5:
+    m4, m5 = m5, m4
+
+    
+
+mediana = m3  
+
+g=m5**m1
+
+r=m1**(1/3)
+
+print("el promedio es:", f)
+print("La mediana es:", mediana)
+print("los numeros de menor a mayor son:", m1, m2, m3, m4, m5)
+print("los numeros de mayor a menor son:", m5, m4, m3, m2, m1 )
+print("la potencia de " + str(m5) + " a la " + str(m1) + " es: " + str(g))
+print("la Raíz de " + str(m1) + " es: " + str(r))
+```
+
+8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del <a href="https://es.wikipedia.org/wiki/Espectro_electromagn%C3%A9tico">espectro electromagnético se encuentra</a>.
+> Extencion .py
+
+```
 #frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
 hz: int
 hz = int(input("Ingrese la frecuencia de la onda en hz (hertz): "))
@@ -173,10 +231,6 @@ elif hz > 30e+3:
 else:
     print("La onda es de muy baja frecuencia")
 ```
-
-8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del <a href="https://es.wikipedia.org/wiki/Espectro_electromagn%C3%A9tico">espectro electromagnético se encuentra</a>.
-> Extencion .py
-
 
 ###Diagrama de Flujo
 
