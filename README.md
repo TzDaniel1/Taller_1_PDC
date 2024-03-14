@@ -58,11 +58,17 @@ else:
 
 ```
 
-###Diagrama de Flujo
+### Diagrama de Flujo
 
 ```mermaid
-flowchart TD;
-    
+flowchart TD
+    A[Par o Impar]-->B[Ingresa numero_evaluar]
+    B-->C[Calculo residuo de num/2] 
+    C-->D{Es el residuo de esta 0?}
+    D-->|Si|E[Es par]
+    D-->|No|G[Es impar]
+    E-->H[imprir]
+    G-->I[imprir]
 ```
 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
 > Extencion .py
@@ -81,7 +87,7 @@ else:
    print ("no es multiplo")
 ```
 
-###Diagrama de Flujo
+### Diagrama de Flujo
 
 ```mermaid
 flowchart TD;
@@ -165,7 +171,7 @@ if m1 > m2:
 if m2 > m3:
     m2, m3 = m3, m2
     if m2 > m4:
-        m2, m4 = m4, m3
+        m2, m4 = m4, m2
     if m2 > m5:
         m2, m5 = m5, m2
 
@@ -185,12 +191,15 @@ g=m5**m1
 
 r=m1**(1/3)
 
+r2=(a*b*c*d*e)**(1/5)
+
 print("el promedio es:", f)
 print("La mediana es:", mediana)
+print("el promedio multiplicatovo es: " + str(r2))
 print("los numeros de menor a mayor son:", m1, m2, m3, m4, m5)
 print("los numeros de mayor a menor son:", m5, m4, m3, m2, m1 )
 print("la potencia de " + str(m5) + " a la " + str(m1) + " es: " + str(g))
-print("la Raíz de " + str(m1) + " es: " + str(r))
+print("la Raíz Cubica de " + str(m1) + " es: " + str(r))
 ```
 
 8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del <a href="https://es.wikipedia.org/wiki/Espectro_electromagn%C3%A9tico">espectro electromagnético se encuentra</a>.
@@ -232,7 +241,7 @@ else:
     print("La onda es de muy baja frecuencia")
 ```
 
-###Diagrama de Flujo
+### Diagrama de Flujo
 
 ```mermaid
 flowchart TD;
@@ -240,6 +249,84 @@ flowchart TD;
 ```
 9. Escriba un programa que reciba el nombre en minúsculas de un país de **America** y retorne la ciudad capital, si el país no pertenece al continente debe arrojar *país no identificado*.
 > Extencion .ipynb
+
+```
+#Taller_1_Punto_9
+nacion=(input("Ingrese un país de America en minusculas (sensible a tildes y espacios) :"))
+if str(nacion)== str("antigua y barbuda"):
+    print("Su capital es :"" Saint John’s")
+elif str(nacion)== str("argentina"):
+    print("Su capital es :"" Buenos Aires")
+elif str(nacion)== str("bahamas"):
+    print("Su capital es :"" Nasáu")
+elif str(nacion)== str("barbados"):
+    print("Su capital es :"" Bridgetown")
+elif str(nacion)== str("belice"):
+    print("Su capital es :"" Belmopán")
+elif str(nacion)== str("bolivia"):
+    print("Su capital es :"" Sucre")
+elif str(nacion)== str("brasil"):
+    print("Su capital es :"" Brasilia")    
+elif str(nacion)== str("canadá"):
+    print("Su capital es :"" Ottawa")
+elif str(nacion)== str("chile"):
+    print("Su capital es :"" Santiago")
+elif str(nacion)== str("colombia"):
+    print("Su capital es :"" Bogotá")
+elif str(nacion)== str("costa Rica"):
+    print("Su capital es :"" San José")
+elif str(nacion)== str("cuba"):
+    print("Su capital es :"" La Habana")
+elif str(nacion)== str("dominica"):
+    print("Su capital es :"" Roseau")
+elif str(nacion)== str("ecuador"):
+    print("Su capital es :"" Quito")
+elif str(nacion)== str("el salvador"):
+    print("Su capital es :"" San Salvador ")
+elif str(nacion)== str("estado unidos"):
+    print("Su capital es :"" Washington D. C.")
+elif str(nacion)== str("granada"):
+    print("Su capital es :"" Saint George")
+elif str(nacion)== str("guatemala"):
+    print("Su capital es :"" Ciudad de Guatemala")
+elif str(nacion)== str("guyana"):
+    print("Su capital es :"" Georgetown")
+elif str(nacion)== str("haití"):
+    print("Su capital es :"" Puerto Príncipe")
+elif str(nacion)== str("honduras"):
+    print("Su capital es :"" Tegucigalpa")
+elif str(nacion)== str("jamaica"):
+    print("Su capital es :"" Kingston")
+elif str(nacion)== str("méxico"):
+    print("Su capital es :""  Ciudad de México")
+elif str(nacion)== str("nicaragua"):
+    print("Su capital es :"" Managua")
+elif str(nacion)== str("panamá"):
+    print("Su capital es :"" Ciudad de Panamá ")
+elif str(nacion)== str("paraguay"):
+    print("Su capital es :"" Asunción ")
+elif str(nacion)== str("perú"):
+    print("Su capital es :"" Lima")
+elif str(nacion)== str("república dominicana"):
+    print("Su capital es :""  Santo Domingo")
+elif str(nacion)== str("san cristóbal y nieves"):
+    print("Su capital es :"" Basseterre ")
+elif str(nacion)== str("san vicente y las granadinas"):
+    print("Su capital es :"" Kingstown")
+elif str(nacion)== str("santa lucia"):
+    print("Su capital es :"" Castries")
+elif str(nacion)== str("surinam"):
+    print("Su capital es :"" paramaribo")
+elif str(nacion)== str("trinidad y tobago"):
+    print("Su capital es :""  Puerto España")
+elif str(nacion)== str("uruguay"):
+    print("Su capital es :"" Montevideo")
+elif str(nacion)== str("venezuela"):
+    print("Su capital es :"" Caracas")
+else :
+    print("país no identificado")
+
+``` 
 10. Escriba un programa que dada una distancia calcule:
 + El tiempo que le tomaría a la luz recorrer la distancia.
 + El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
@@ -247,4 +334,22 @@ flowchart TD;
 + El tiempo que le tomaría a Bolt recorrer la distancia.
 > Extencion .py
 
+```
+#Taller_1_Punto_10
+distancia: float #distancia ingresada en metros
+velocidadLuz: int = 300000000 #m/s
+velocidadSonido: int = 344 #m/s
+velocidadVehiculo: float = 141.11 #m/s
+velocidadBolt: float = 12.5 #m/s
+distancia = float(input('Ingrese una distancia en metros ')) #usuario ingresa valor de distancia y se hace la conversion a real
+tiempoLuz: float = distancia / velocidadLuz  #calculo del tiempo a partir de la distancia y velocidad 
+tiempoSonido: float = distancia / velocidadSonido
+tiempoVehiculo: float = distancia / velocidadVehiculo
+tiempoBolt: float = distancia / velocidadBolt
 
+print("El tiempo que le tomaría a la luz recorrer " +str(distancia)+ " metros es de " +str(tiempoLuz)+ " segundos" )
+print("El tiempo que le tomaría al sonido recorrer " +str(distancia)+ " metros es de " +str(tiempoSonido)+ " segundos" )
+print("El tiempo que le tomaría al vehiculo mas veloz recorrer" +str(distancia)+ " metros es de " +str(tiempoVehiculo)+ " segundos" )
+print("El tiempo que le tomaría a Usain Bolt recorrer " +str(distancia)+ " metros es de " +str(tiempoBolt)+ " segundos" )
+
+```
