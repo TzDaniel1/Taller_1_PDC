@@ -13,6 +13,11 @@
 
 2. Realice un programa que lea tres números reales y determine cuál es el mayor.
   > Extencion .py
+ 
+Despues de definir cada input, primero se lleva a una comparacion en la cual ningun numero ingresado es igual, asi se define el mayor exclusivo.
+
+Para la segunda tabla, donde hay uno o mas iguales, se compara cuuales son iguales y si son igual si estos son mayores o menores que el numero restante.
+
 ```
 primer_num=float(input("Ingrese el primer numero (real)"))
 segundo_num=float(input("Ingrese el segundo numero (real)"))
@@ -44,6 +49,8 @@ elif segundo_num==tercer_num:
 3. Realice un programa que lea un número enteros y determine si es par o impar.
 > Extencion .ipynb
 `Queriamos añdir Notas de Junyper Directamente pero el proceso no nos funciono`
+
+Despues de tomar el numero, se hace un calculo de residuo, con la variable del residuo, se puede comprobar si es par o impar dado que un par tendra residuo 0
 
 ```
 #Par or Impar
@@ -102,6 +109,11 @@ flowchart TD;
 ```
 5. Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 > Extencion .ipynb
+
+Inicialmente, se declaran las variables que seran ingresadas en la consola como numeros reales, posterior a ello se les hace la conversion de cadena de texto a flotante (real) ya que lo que ingrese a consola sera entendido como string y debe pasarse a numero, con la adicion de un mensaje que instruira al usuario a ingresar los numeros. 
+
+Por otra parte, se establecen los condicionales debidos: si la suma de los dos primeros numeros es igual al tercero ingresado, imprimir que esto, si no se cumple, verificar si la suma des estos dos primeros numeros, es mayor o menor al tercero.
+
 ```
 #programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 n: float
@@ -122,6 +134,8 @@ else:
 
 6. Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.
 > Extencion .py
+
+Despues de tomar el input de la letra, se define otra vaiable con el mismo valor, la cual es evaluada con `ord` para ver si coincide con el codigo ASCII de las vocales.
 
 ```
 #programa que solicite al usuario una letra y determine si es una vocal o una consonante.
@@ -205,6 +219,9 @@ print("la Raíz Cubica de " + str(m1) + " es: " + str(r))
 8. Escriba un programa al que se le ingrese la frecuencia de una onda en *hz* y como salida arroje en que parte del <a href="https://es.wikipedia.org/wiki/Espectro_electromagn%C3%A9tico">espectro electromagnético se encuentra</a>.
 > Extencion .py
 
+Se declara la variable de la frecuencia de onda como entero y enseguida, se establece la linea para que el usuario ingrese un valor de frecuencia de onda en Hertz y, se hace la conversion de la cadena de texto ingresada a numero entero. Seguidamente, se establecen varios condicionales, de acuerdo a los intervalos de frecuencia de onda clasificados en el espectro electromagentico, es decir, segun el valor ingresado por el usuario, se clasificara el tipo de onda. Los condicionales utilizados fueron if-elif-else, de manera que, el primer condicional, si no se cumple, pasa hacia el siguiente que es elif, el cual si se cumple, imprime el string correspondiente, pero si no cumple ninguna condicion 'sino si' (elif) se pasa al else (entonces) e imprime el resultado.
+
+
 ```
 #frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
 hz: int
@@ -249,6 +266,10 @@ flowchart TD;
 ```
 9. Escriba un programa que reciba el nombre en minúsculas de un país de **America** y retorne la ciudad capital, si el país no pertenece al continente debe arrojar *país no identificado*.
 > Extencion .ipynb
+
+"Tabla" de los paises comparando el str inicial con cada pais en la "tabla".
+
+Si no entra en ninguna país de America, se lanza como no identificado por default.
 
 ```
 #Taller_1_Punto_9
@@ -333,6 +354,11 @@ else :
 + El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
 + El tiempo que le tomaría a Bolt recorrer la distancia.
 > Extencion .py
+
+Se toma el valor del input con metros y se define como real.
+
+Se definen y calculan los diferenctes calculos a presentar.
+Y se imprimen.
 
 ```
 #Taller_1_Punto_10
