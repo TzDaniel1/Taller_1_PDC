@@ -76,6 +76,8 @@ flowchart TD
     D-->|No|G[Es impar]
     E-->H[imprir]
     G-->I[imprir]
+    H-->J(Fin)
+    I-->J;
 ```
 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
 > Extencion .py
@@ -262,7 +264,51 @@ else:
 
 ```mermaid
 flowchart TD;
-    
+    A(inicio)-->B[n_hz]
+    B-->C{n_hz>30e+18}
+    C-->|si| D[Rayos Gamma]
+    C-->|no| E{n_hz>30e+15}
+    E-->|si| F[Rayos X]
+    E-->|no| G{n_hz>1.5e+15}
+    G-->|si| H[Ultravioleta Extrmo]
+    G-->|no| I{n_hz>7.89e+19}
+    I-->|si| J[Ultravioleta Cercano]
+    I-->|no| K{n_hz>384e+12}
+    K-->|si| L[Espectro Vicible]
+    K-->|no| M{n_hz>120e+12}
+    M-->|si| N[Infrarrojos Cercanos]
+    M-->|no| O{n_hz>6e+12}
+    O-->|si| P[Infrayojos Medios]
+    O-->|no| Q{n_hz>300e+9}
+    Q-->|si| R[Ifrarrojos Lejanos]
+    Q-->|no| S{n_hz>3e+8}
+    S-->|si| T[Microondas]
+    S-->|no| U{n_hz>300e+6}
+    U-->|si| V[Ultra Alta Frecuencia]
+    U-->|no| W{n_hz>30e+6}
+    W-->|si| X[Muy Alta Frecuencia Y De Radio]
+    W-->|no| Y{n_hz>1.7e+6}
+    Y-->|si| Z[Corta Y De Radio]
+    Y-->|no| a{n_hz>650e+3}
+    a-->|si| b[Media Y De Radio]
+    a-->|no| c{n_hz>30e+3}
+    c-->|si| d[Larga Y De Radio]
+    c-->|no| e[Muy Baja Frecuencia]
+    D-->f(fin)
+    F-->f
+    H-->f
+    J-->f
+    L-->f
+    N-->f
+    P-->f
+    R-->f
+    T-->f
+    V-->f
+    X-->f
+    Z-->f
+    b-->f
+    d-->f
+    e-->f    
 ```
 9. Escriba un programa que reciba el nombre en minúsculas de un país de **America** y retorne la ciudad capital, si el país no pertenece al continente debe arrojar *país no identificado*.
 > Extencion .ipynb
